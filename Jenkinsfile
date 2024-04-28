@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'gradlew clean build'
-                archiveArtifacts artifacts: '**/build/libs/*.jar', fingerprint: true
+                archiveArtifacts artifacts: '/app/build/outputs/apk/*.apk', fingerprint: true
             }
         }
     }
