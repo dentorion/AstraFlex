@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn clean build'
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+                bat 'gradlew clean build'
+                archiveArtifacts artifacts: '**/build/libs/*.jar', fingerprint: true
             }
         }
     }
