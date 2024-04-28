@@ -13,7 +13,7 @@ internal fun FirstScreen(
         Button(onClick = {
             viewModel.consumeAction(FirstScreenAction.LoadImportantData)
         }) {
-            Text(text = "Get data")
+            Text(text = "Get data new dev-branch-124")
         }
     }
 }
