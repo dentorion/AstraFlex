@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'clean build --stacktrace'
+                bat 'mvn clean build'
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
         }
