@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "Android_Project_Label" }
+    agent any
 
     stages {
         stage('Build') {
