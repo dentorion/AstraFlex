@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'nmake'
+                bat 'clean build --stacktrace'
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
         }
